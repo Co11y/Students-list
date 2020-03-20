@@ -1,0 +1,37 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+
+  <servlet>
+    <servlet-name>HelloWorld</servlet-name>
+    <servlet-class>Servlets.HelloWorld</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>LoginValidator</servlet-name>
+    <servlet-class>Servlets.LoginValidator</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>AccountCreator</servlet-name>
+    <servlet-class>Servlets.AccountCreator</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>AccountCreator</servlet-name>
+    <url-pattern>/AccountCreator</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>LoginValidator</servlet-name>
+    <url-pattern>/LoginValidator</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>HelloWorld</servlet-name>
+    <url-pattern>/HelloWorld</url-pattern>
+  </servlet-mapping>
+</web-app>
