@@ -1,6 +1,8 @@
 body {
-  background: rgb(188,86,188);
-  background: radial-gradient(circle, rgba(188,86,188,1) 0%, rgba(150,182,255,1) 100%);
+  /* background: rgb(188,86,188);
+  background: radial-gradient(circle, rgba(188,86,188,1) 0%, rgba(150,182,255,1) 100%); */
+  background-image: url("imgs/bk.png");
+background-repeat: no-repeat;
   margin: 0px;
   height: 1200px;
 }
@@ -12,13 +14,26 @@ body {
   padding-top: 30px;
 }
 
+@media (max-width:1200px){
+  .container {
+    width: 100%;
+  }
+}
+
 .wrapper {
-  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.tab {
+  height: 100%;
+  /* background-color: rgba(255, 255, 255, 0.26); */
 }
 
 #menu {
   position: fixed;
-  top: 500px;
+  top: 400px;
 }
 .menuItem {
   height: 50px;
@@ -44,11 +59,9 @@ body {
 /*login window*/
 #login {
   display: none;
-  height: 100%;
-  background-color: rgba(255, 255, 255, 0.26);
 }
-#login form {
-  margin-top: 25%;
+#loginForm {
+  margin-top: 20px;
   width: 180px;
   display: block;
   margin-left: auto;
@@ -57,6 +70,20 @@ body {
 #login input {
   display: block;
 }
+
+#loginBlock {
+  background-color: white;
+  width: 200px;
+  height: 200px;
+  margin-top: 25%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+#loginBlock h2 {
+  margin: 0px;
+}
+
 #passwordInputLogin {
 margin-bottom: 12px;
 }
@@ -78,8 +105,25 @@ margin-bottom: 12px;
 /*list*/
 #list {
   display: none;
-  background-color: coral;
-  height: 600px;
+}
+#list ul {
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#list ul li {
+  padding-top: 8px;
+  display: block;
+  height: 30px;
+  background-color: rgba(255, 255, 255, 0.26);
+  border: 1px solid black;
+  width: 300px;
+  display: flex;
+}
+
+#list ul li .listNumber {
+  margin-right: 10px;
 }
 
 /*profile*/
@@ -97,8 +141,6 @@ margin-bottom: 12px;
 /*signUp*/
 #signUp {
   display: none;
-  height: 100%;
-  background-color: rgba(255, 255, 255, 0.26);
 }
 
 #signUp form {

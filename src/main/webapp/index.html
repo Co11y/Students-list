@@ -9,30 +9,33 @@
 </head>
 <body>
   <div id="menu">
-    
+
     <div id="homeButton" class="menuItem"><img src="imgs/home.png" alt="" class="menuIcon">
     </div>
 
     <div id="userButton" class="menuItem"><img src="imgs/user.png" alt="user" class="menuIcon"></div>
-    
+
     <div id="listButton" class="menuItem">
       <img src="imgs/list.png" alt="" class="menuIcon">
     </div>
 
     </div>
 
-  <div class="container" id="login">
-    <form action="">
-      <label for="emailInputLogin">Email</label>
-      <input type="text" id="emailInputLogin" required>
-      <label for="passwordInputLogin">Password</label>
-      <input type="password" id="passwordInputLogin" required>
-      <button id="loginButtonLogin">Login</button>
-      <button id="signUpButtonLogin">SignUp</button>
-    </form>
+  <div class="container tab" id="login">
+    <div id="loginBlock">
+      <h2>Student List</h2>
+      <form action="" id="loginForm">
+        <label for="emailInputLogin">Email</label>
+        <input type="text" id="emailInputLogin" required>
+        <label for="passwordInputLogin">Password</label>
+        <input type="password" id="passwordInputLogin" required>
+        <button id="loginButtonLogin">Login</button>
+        <button id="signUpButtonLogin">SignUp</button>
+      </form>
+    </div>
   </div>
 
-  <div class="container" id="signUp">
+  <div class="container tab" id="signUp">
     <form>
       <label for="firstNameInputSignUp">First Name</label>
       <input type="text" id="firstNameInputSignUp" required>
@@ -52,33 +55,45 @@
     </form>
   </div>
 
-  <div class="container" id="home">
-      <h1>MAIDAN HERE BOYZZZZ</h1>
-        <button type="button" name="button" onclick="loadDoc()" >To the maidan</button>
-        <a class="navbar-item" href="#changed">
-          About
-        </a>
+  <div class="container tab" id="home">
+    <div class="wrapper">
+      <h1>Students List</h1>
+      <h2>Manage all of your students here</h2>
+      <img src="imgs/profesor.png" alt="" class="">
+    </div>
   </div>
 
-  <div class="container" id="list">
-    <ul>
-      <li>dwadw</li>
-      <li>dawdwa</li>
-      <li>wad</li>
-      <li>dwa</li>
-      <li>4g3g4sgfsef</li>
-    </ul>
+  <div class="container tab" id="list">
+    <div class="wrapper">
+      <ul id="listUl">
+        <li>
+          <div class="listNumber">
+            1)
+          </div>
+          <div class="listName">
+              Blyakiev Blyatko
+          </div>
+        </li>
+        <li></li>
+        <li>dawdwa</li>
+        <li>wad</li>
+        <li>dwa</li>
+        <li>4g3g4sgfsef</li>
+      </ul>
+    </div>
   </div>
-  <div class="container" id="profile">
-    <h2>First Name</h2>
-    <p id="firstNameProfile"></p>
-    <h2>Last Name</h2>
-    <p id="lastNameProfile"></p>
-    <h2>Email</h2>
-    <p id="emailProfile"></p>
-    <h2>Role</h2>
-    <p id="roleProfile"></p>
-    <button id="logOutButtonProfile">Logout</button>
+  <div class="container tab" id="profile">
+    <div class="wrapper">
+      <h2>First Name</h2>
+      <p id="firstNameProfile"></p>
+      <h2>Last Name</h2>
+      <p id="lastNameProfile"></p>
+      <h2>Email</h2>
+      <p id="emailProfile"></p>
+      <h2>Role</h2>
+      <p id="roleProfile"></p>
+      <button id="logOutButtonProfile">Logout</button>
+    </div>
   </div>
 
   <script type="text/javascript" src="scripts\user.js"></script>
