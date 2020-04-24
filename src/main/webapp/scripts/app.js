@@ -26,6 +26,9 @@ function route(ref) {
     }
 
     else if (ref == "list") {
+      // if (!isLoaded) {
+      //   loadStudents(1);
+      // }
         show(list);
         highlight(listButton);
     }
@@ -36,7 +39,6 @@ function route(ref) {
     else if (ref == "signUp") {
         show(signUp);
     }
-    console.log("triggered");
 }
 
 function highlight(button) {

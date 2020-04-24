@@ -16,14 +16,17 @@ createAccountButtonSignUp.addEventListener("click", function (event) {
     passwordInputSignUp.required;
     passwordInputRepeatSignUp.required;
 
-    if (firstNameInputSignUp.validity.valueMissing == false && lastNameInputSignUp.validity.valueMissing == false &&
-    emailInputSignUp.validity.valueMissing == false && passwordInputSignUp.validity.valueMissing == false &&
-    passwordInputRepeatSignUp.validity.valueMissing == false && adminRadioSignUp.checked || userRadioSignUp.checked) {
+    if (firstNameInputSignUp.validity.valueMissing == false &&
+       lastNameInputSignUp.validity.valueMissing == false &&
+       emailInputSignUp.validity.valueMissing == false &&
+       passwordInputSignUp.validity.valueMissing == false &&
+       passwordInputRepeatSignUp.validity.valueMissing == false &&
+       adminRadioSignUp.checked || userRadioSignUp.checked) {
         if (passwordInputSignUp.value != passwordInputRepeatSignUp.value) {
             alert("password doesn't match");
         }
         else {
-            alert("hell yes");
+            alert("registred");
             user = new Object();
             user.firstName = firstNameInputSignUp.value;
             user.lastName = lastNameInputSignUp.value;
@@ -46,4 +49,3 @@ createAccountButtonSignUp.addEventListener("click", function (event) {
         }
     }
 });
-

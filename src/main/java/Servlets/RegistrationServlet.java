@@ -14,7 +14,7 @@ import java.io.Writer;
 import java.sql.SQLException;
 import java.util.stream.Collectors;
 
-public class AccountCreator extends HttpServlet {
+public class RegistrationServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         Gson gson = new Gson();
         System.out.println("got post");

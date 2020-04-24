@@ -106,25 +106,39 @@ margin-bottom: 12px;
 #list {
   display: none;
 }
-#list ul {
-  width: 300px;
-  margin-left: auto;
-  margin-right: auto;
-}
 
-#list ul li {
+
+#list .listName {
   padding-top: 8px;
   display: block;
   height: 30px;
   background-color: rgba(255, 255, 255, 0.26);
   border: 1px solid black;
   width: 300px;
+  margin: auto;
+  text-align: left;
+}
+#list .listInfo {
+  padding-top: 10px;
   display: flex;
+  height: 30px;
+  background-color: rgba(255, 255, 255, 0.26);
+  border: 1px solid black;
+  width: 300px;
+  margin: auto;
+  text-align: left;
 }
 
-#list ul li .listNumber {
-  margin-right: 10px;
+#list .listInfo .listInfoGroup {
+  margin-left: 10px;
 }
+
+#list .listInfo .listInfoEditButton {
+  width: 80px;
+  height: 20px;
+  margin-left: 20px;
+}
+
 
 /*profile*/
 #profile {

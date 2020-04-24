@@ -8,7 +8,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.Writer;
 
-public class HelloWorld extends HttpServlet {
+public class IndexServlet extends HttpServlet {
 
     @Override
     public void init() throws ServletException {
@@ -20,7 +20,7 @@ public class HelloWorld extends HttpServlet {
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        RequestDispatcher rd = request.getRequestDispatcher("noindex.html");
+        RequestDispatcher rd = request.getRequestDispatcher("index.html");
         rd.forward(request, response);
     }
 }

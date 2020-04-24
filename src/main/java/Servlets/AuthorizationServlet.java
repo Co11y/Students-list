@@ -17,7 +17,7 @@ import java.io.Writer;
 import java.util.Optional;
 import java.util.stream.Collectors;
 
-public class LoginValidator extends HttpServlet {
+public class AuthorizationServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         Gson gson = new Gson();
         System.out.println("got post");

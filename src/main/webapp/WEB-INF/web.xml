@@ -7,18 +7,29 @@
 
   <servlet>
     <servlet-name>HelloWorld</servlet-name>
-    <servlet-class>Servlets.HelloWorld</servlet-class>
+    <servlet-class>Servlets.IndexServlet</servlet-class>
   </servlet>
 
   <servlet>
     <servlet-name>LoginValidator</servlet-name>
-    <servlet-class>Servlets.LoginValidator</servlet-class>
+    <servlet-class>Servlets.AuthorizationServlet</servlet-class>
   </servlet>
 
   <servlet>
-    <servlet-name>AccountCreator</servlet-name>
-    <servlet-class>Servlets.AccountCreator</servlet-class>
+    <servlet-name>StudentsUpdaterServlet</servlet-name>
+    <servlet-class>Servlets.StudentsUpdater</servlet-class>
   </servlet>
+
+
+  <servlet>
+    <servlet-name>AccountCreator</servlet-name>
+    <servlet-class>Servlets.RegistrationServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>StudentsUpdaterServlet</servlet-name>
+    <url-pattern>/UpdateStudent</url-pattern>
+  </servlet-mapping>
 
   <servlet-mapping>
     <servlet-name>AccountCreator</servlet-name>
@@ -32,6 +43,6 @@
 
   <servlet-mapping>
     <servlet-name>HelloWorld</servlet-name>
-    <url-pattern>/HelloWorld</url-pattern>
+    <url-pattern></url-pattern>
   </servlet-mapping>
 </web-app>
